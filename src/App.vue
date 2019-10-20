@@ -1,0 +1,34 @@
+<template>
+  <div id="app">
+    <m-header></m-header>
+    <tab />
+
+ 
+   <router-view></router-view>
+ 
+
+   <player />
+  </div>
+</template>
+
+<script>
+ import MHeader from './components/m-header/m-header';
+ import Tab from './components/tab/tab';
+ import Player from './components/player/player'
+export default {
+  name: 'App',
+  components:{
+     MHeader,
+     Tab,
+     Player
+  }
+}
+</script>
+
+<style  scoped lang='stylus' rel='stylesheet/stylus'>
+@import './common/stylus/variable'
+#app  
+ color:$color-theme
+ overflow hidden
+ height 100%
+</style>
